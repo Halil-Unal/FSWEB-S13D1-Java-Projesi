@@ -6,22 +6,25 @@ public class Main {
         System.out.println(shouldWakeUp(false, 2));
         System.out.println(shouldWakeUp(true, 22));
         System.out.println(shouldWakeUp(true, -1));
+        System.out.println("--------");
         System.out.println(hasTeen(12, 56, 36));
         System.out.println(hasTeen(15, 26, 36));
         System.out.println(hasTeen(18, 5, 36));
+        System.out.println("--------");
         System.out.println(isCatPlaying(true, 42));
         System.out.println(isCatPlaying(false, 42));
         System.out.println(isCatPlaying(false, 28));
         System.out.println(isCatPlaying(true, 20));
+        System.out.println("--------");
         System.out.println(area(25.12, 4));
         System.out.println(area(-1, 4));
         System.out.println(area(5.3, 4.2));
+        System.out.println("--------");
         System.out.println(area2(5));
         System.out.println(area2(-5));
         System.out.println(area2(4.2));
         System.out.println("--------");
         Scanner scanner = new Scanner(System.in);
-
 
         boolean isValid = true;
         while (isValid) {
@@ -39,9 +42,6 @@ public class Main {
         }
 
     }
-
-
-
     public static boolean shouldWakeUp(boolean isBarking, int time) {
         if (time < 0 || time > 23) {
             return false;
